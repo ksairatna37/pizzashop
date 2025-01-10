@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/pizzashop/static/css/main.4e1b7e61.css",
+    "main.js": "/pizzashop/static/js/main.2865cff5.js",
+    "static/js/239.8ec0ba85.chunk.js": "/pizzashop/static/js/239.8ec0ba85.chunk.js",
+    "static/js/213.572c0f4f.chunk.js": "/pizzashop/static/js/213.572c0f4f.chunk.js",
+    "static/js/455.965c8106.chunk.js": "/pizzashop/static/js/455.965c8106.chunk.js",
+    "static/js/488.c4af41d3.chunk.js": "/pizzashop/static/js/488.c4af41d3.chunk.js",
+    "static/media/Veggie.png": "/pizzashop/static/media/Veggie.38f4daf0b2224efb80a6.png",
+    "static/media/pizza-bread.png": "/pizzashop/static/media/pizza-bread.b5b95361a57fece9538f.png",
+    "static/media/meat.png": "/pizzashop/static/media/meat.3aa6a30c1700fc1eeebc.png",
+    "static/media/pizza.png": "/pizzashop/static/media/pizza.1e45c8768ddf7f72baa6.png",
+    "static/media/paneer.png": "/pizzashop/static/media/paneer.094e1bae48d6edca78be.png",
+    "static/media/homepage.jpg": "/pizzashop/static/media/homepage.20e52c94912778cf2ed9.jpg",
+    "static/media/bbq.png": "/pizzashop/static/media/bbq.4cbab2f0dd9a1dbbe289.png",
+    "static/media/Pepperoni.png": "/pizzashop/static/media/Pepperoni.74124b40ac2ed2f603ce.png",
+    "static/media/Margherita.png": "/pizzashop/static/media/Margherita.f598a6f954d0e43e44eb.png",
+    "static/media/select.png": "/pizzashop/static/media/select.d3e4ac385d34800a7f63.png",
+    "static/media/up-right.png": "/pizzashop/static/media/up-right.9433bd856e29512d753c.png",
+    "index.html": "/pizzashop/index.html",
+    "static/media/delete.svg": "/pizzashop/static/media/delete.66d3958d6b48a544d1bea3644f8db8fb.svg",
+    "static/media/category-nonveg.svg": "/pizzashop/static/media/category-nonveg.1c7fd6b07593e5d001ebd4ee417db48c.svg",
+    "static/media/category-veg.svg": "/pizzashop/static/media/category-veg.67ea6496bbf93b9f84a8a1403ba57f3f.svg",
+    "static/media/cancel.svg": "/pizzashop/static/media/cancel.30508a6d00696f2dc5c6347d3462a2ee.svg",
+    "static/media/add.svg": "/pizzashop/static/media/add.db8059549b1bd98b424237d048d5e7c3.svg",
+    "main.4e1b7e61.css.map": "/pizzashop/static/css/main.4e1b7e61.css.map",
+    "main.2865cff5.js.map": "/pizzashop/static/js/main.2865cff5.js.map",
+    "239.8ec0ba85.chunk.js.map": "/pizzashop/static/js/239.8ec0ba85.chunk.js.map",
+    "213.572c0f4f.chunk.js.map": "/pizzashop/static/js/213.572c0f4f.chunk.js.map",
+    "455.965c8106.chunk.js.map": "/pizzashop/static/js/455.965c8106.chunk.js.map",
+    "488.c4af41d3.chunk.js.map": "/pizzashop/static/js/488.c4af41d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e1b7e61.css",
+    "static/js/main.2865cff5.js"
+  ]
+}
