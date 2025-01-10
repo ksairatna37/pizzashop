@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+.home-page {
+  display: flex;
+  width: 100%;
+  /* background-color: #09262C; */
+  background-image: linear-gradient(to right, red, yellow);
+  scroll-snap-align: start;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('../assets/homepage.jpg'); */
+  background-size: contain; /* Cover the entire viewport */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the image */
+  margin: 0; /* Remove default body margin for full bleed */
+  height: 100vh;
+  min-height: 100vh;
+}
+.name {
+  color: rgb(37, 37, 37);
+  font-family: "Jua", serif;
+  font-size: 13rem;
+  text-align: center;
+  font-weight: 600;
+  
+  letter-spacing: 10px  ;
+  z-index: -99999;
+}
+.circle-container {
+  position: absolute; /* Position relative to the .home-page container */
+  bottom: 50px; /* Distance from bottom */
+  right: 70px; /* Distance from right */
+  width: 100px; /* Set circle width */
+  height: 100px; /* Set circle height */
+  border-radius: 50%; /* Make it a circle */
+  background-color: white; /* White background for the circle */
+  display: flex; /* Use flexbox to center image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+.circle-container2 {
+  position: absolute; /* Position relative to the .home-page container */
+  bottom: 50px; /* Distance from bottom */
+  right: 70px; /* Distance from right */
+  width: 100px; /* Set circle width */
+  height: 100px; /* Set circle height */
+  border-radius: 50%; /* Make it a circle */
+  background-color: white; /* White background for the circle */
+  display: flex; /* Use flexbox to center image */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  z-index: -999;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+
+.circle-image {
+  width: 70%; /* Adjust size of image */
+  height: auto;
+  display: block;
+}
+.circle-image2 {
+  width: 20%; /* Adjust size of image */
+  height: auto;
+  display: block;
+}
+
+.circle-container:hover {
+  cursor: pointer;
+  transform: translateX(-70px);
+}
+.pizza-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  top: 20rem;
+  z-index: 1;
+}
+
+
+.pizza-img{
+    scale: 1.5 !important; /* Adjust size of image */
+  display: block;
+  background-position: center;
+  background-size: cover;
+}

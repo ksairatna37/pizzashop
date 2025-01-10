@@ -1,0 +1,53 @@
+.form-page {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.works-card {
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  color: white;
+}
+
+.works-left-side {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+.works-right-side {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  position: relative;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.box {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; /* Three equal height rows */
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    height: inherit;
+    background-color: whitesmoke;
+}
+
+.row {
+    /* If you want further styling on the row, add here */
+    display: flex;
+    align-items: center; /* For Vertical Alignment */
+    justify-content: center; /* For Horizontal Alignment */
+    text-align: center;
+}

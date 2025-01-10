@@ -1,0 +1,93 @@
+/* homepage.css */
+.pizza-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    padding-right: 3rem;/* Add spacing from top */
+}
+.card-container{
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column; /* Lay out elements vertically */
+    width: 300px; /* Set a fixed width for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    overflow: hidden; /* Prevent overflowing content*/
+}
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Add some padding for all content */
+    text-align: center; /* Center all text content */
+}
+
+.pizza-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.pizza-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;  /* Fixed width for the container */
+    height: 200px; /* Fixed height for the container */
+    overflow: hidden; /* Hide image overflows */
+  
+  }
+  
+  .pizza-image {
+      width: auto; /* Image will auto adjust its width */
+       height: 100%; /* Image will take up 100% of container's height */
+      max-width: none;
+      object-fit: cover;
+      border-radius: 5px;
+  }
+  
+  img {
+      scale: 1 !important;
+  }
+
+.quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-button {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid #c0c0c0;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 5px;
+  outline: none; /* Removing default outline*/
+}
+
+.quantity-button:hover{
+  background-color: #e0e0e0;
+}
+
+.quantity-display {
+    font-size: 18px;
+    margin: 0 10px;
+}
+.add-to-cart-button{
+    background-color: #212121; /* Dark green*/
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+     margin-top: 20px;
+     outline: none; /* Removing default outline*/
+}
+.add-to-cart-button:hover {
+    background-color: #323232;
+}

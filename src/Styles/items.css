@@ -1,0 +1,51 @@
+.pizzas{
+    width: 100vw;
+    height: auto;
+}
+.section1{
+    width: inherit;
+    height: auto;
+    font-family: "Jua",sans-serif;
+    font-size: 4rem;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    line-height: 60px;
+    padding: 1rem 4rem 1rem 4rem ;
+    display: flex; /* Added for flexbox layout */
+    justify-content: space-between; /* Distributes space between items*/
+    align-items: center; 
+}
+.section1 span{
+    color: rgb(251, 75, 75);
+    margin: 0;
+    padding: 0;
+}
+.section1 img{
+    scale: 0.1;
+    outline: none !important;
+
+}
+
+img{
+    outline: none !important;
+}
+.section2{
+    font-size: 0.8rem;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.section3{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.delivery{
+    font-size: 1rem;
+    padding: 0 1rem 0 1rem;
+    border: 2px solid #c0c0c0;
+    border-radius: 20px;
+
+}

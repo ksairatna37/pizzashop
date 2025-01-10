@@ -1,0 +1,241 @@
+.form-page {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  scroll-snap-align: start;
+  gap: 2rem;
+}
+
+.works-card {
+  height: inherit;
+  text-align: center;
+  color: black;
+  font-family: "Jua", sans-serif;
+}
+
+.works-left-side {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.works-right-side {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  overflow: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: flex-start;
+}
+
+.box {
+  border: 2px solid #c0c0c0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  gap: 0;
+}
+.sec {
+  height: auto;
+  text-align: left;
+  padding: 1rem;
+}
+.img {
+  flex: 0 0 20%; /* 10% of the parent's width */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  width: 100%;
+}
+
+.pizza-details {
+  flex: 0 0 60%; /* 80% of the parent's width */
+  display: flex;
+  /* Replace with your content or styles */
+  flex-direction: column;
+}
+
+.price-sec {
+  flex: 0 0 20%;
+  text-align: right;
+  /* 10% of the parent's width */
+}
+
+.price-sec .pizza-price {
+  font-weight: 600;
+}
+
+.pizza-desc {
+  color: rgb(100, 129, 143);
+}
+
+.type {
+  padding-top: 20px;
+}
+.type span {
+  position: relative;
+  top: 3px;
+}
+
+.address-section {
+  width: auto;
+  height: auto;
+  text-align: left;
+  padding: 10px 1rem;
+}
+.address-input {
+  width: 100%; /* Adjust to fit the parent container */
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+  resize: none;
+  overflow: auto;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: flex-start;
+  margin: 1rem 0;
+  color: black;
+  flex-direction: column;
+  text-align: left;
+}
+
+.radio-input {
+  margin-right: 5px;
+}
+.button {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.size {
+  font-size: 0.9rem;
+  color: #918e8e;
+}
+
+.price-section .radio-buttons {
+  gap: 20px;
+}
+
+.button .grand-total,
+.button .grand-total-value {
+  font-weight: 600;
+}
+
+.price-section .radio-buttons {
+  padding: 1rem;
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+}
+.add-button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* homepage.css */
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.count .quantity-button {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 0;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  outline: none; /* Removing default outline*/
+}
+
+.quantity-button:hover {
+  background-color: #e0e0e0;
+}
+.quantity-display {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.place-order-section {
+  position: absolute;
+  width: auto;
+  height: 90vh;
+  display: none;
+  right: 0;
+  bottom: 0;
+  font-family: "Jua", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.69) 0rem 0px 1rem 0px;
+}
+.place-order-instruction {
+  width: inherit !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cancel-button{
+  border: 1px solid black;
+}
+.cancel-button:hover {
+  cursor: pointer;
+}
+/* homepage.css */
+.input-fields-container {
+  display: grid; /* Make container grid */
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width*/
+  gap: 10px; /* Space between rows and columns */
+  width: inherit; /* set the width*/
+  margin: 1rem auto; /* set margin to center the component */
+}
+
+.input-fields-container>div{
+  display: flex;
+  flex-direction: column;
+}
+.input-fields-container>div>span{
+  color: red;
+}
+.radio-buttons>span{
+  color: red;
+}
+.input-field {
+  padding: 10px;
+  border: 1px solid #c0c0c0; /* Light gray border*/
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Removing default outline*/
+  font-size: 16px;
+  color: black; /* Grey text for placeholders*/
+}
+.input-field:focus {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(100, 181, 246, 0.5);
+}
+.alert{
+  display: none;
+  color: red;
+}
+.payment-mode{
+  margin: 1rem 0 0 0 !important;
+  padding: 1rem 0 0 0 ;
+}
+.place-order-total{
+  margin: 3rem 0 0 0 ;
+}
+.place-order-grand-total{
+  color: rgb(255, 0, 0);
+}

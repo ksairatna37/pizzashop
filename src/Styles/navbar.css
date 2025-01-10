@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Vinyl&display=swap');
+
+.navbar{
+    background-color: transparent;
+}
+.navbar-brand{
+    color: rgb(37, 37, 37);
+    font-family: "Jua", serif;
+  font-weight: 500;
+  font-style:normal;
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: inherit; 
+    text-decoration: none;
+     /* Change to your desired hover color */
+}
+a, a:hover{
+    font-family: "Jua", serif;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+nav {
+    display: flex; /* 1 */
+    background: #cfd8dc; /* 4 */
+  }
+  
+  nav ul {
+    display: flex; /* 5 */
+    list-style: none; 
+    margin-left: 30px;/* 6 */
+  }
+  
+  nav li {
+    padding-right: 2rem; /* 7! */
+  }
