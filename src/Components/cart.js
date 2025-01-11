@@ -141,7 +141,7 @@ function Cart() {
                             <div className="pizza-name">{pizzaname}</div>
                             <div className="pizza-desc">{description}</div>
                             <div className="type">
-                                <span>New Hand Tossed |</span>{choosecategory === "Veg" ? (<img src={category1} alt="" />) : (<img src={category2} alt="" />)} <span>{choosecategory}</span>
+                                <span>New Hand Tossed |</span>{choosecategory === "Veg" ? (<img src={category1} alt="" />) : (<img src={category2} alt="" />)} <span className='category-type'>{choosecategory}</span>
 
                             </div>
                             <div className="base">{base} Crust</div>

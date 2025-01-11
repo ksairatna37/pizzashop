@@ -6,6 +6,7 @@ import Cart from './Components/cart';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Choose from './Components/choose';
 import Orders from './Components/orders';
+import './Styles/responsive.css'
 
 const router = createBrowserRouter(
   [

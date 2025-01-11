@@ -144,8 +144,8 @@ export default function Orders() {
                     <div className="order-user-calling">hey <span>pizzaiolo</span> !</div>
                 </div>
             </div>
-            <div className="section1 section2">Orders</div>
-            <div className="section1 section2 section3">
+            <div className="section1 section2 pizza-order-order">Orders</div>
+            <div className="section1 section2 section3 pizza-stage-section">
                 <div class="container">
                     Pizza Stage Section
                     <div class="row mt-3">
@@ -310,7 +310,7 @@ export default function Orders() {
                     onDelete={handleOrderDelete}
                 />
             )}
-            <div className="section1 section2 section3">
+            <div className="section1 section2 section3 pizza-stage-section">
                 <div className="container">
                     Main Section
                     <div class="row mt-3">
@@ -374,14 +374,14 @@ export default function Orders() {
                         </div>
                     ))}
 
-                    <div className="total-order-delivered mt-5 mb-5">
-                        <div>Total orders delivered: {getTotalDeliveredOrders()}</div>
-                    </div>
 
 
                 </div>
 
             </div>
+                    <div className="total-order-delivered mt-5 mb-5">
+                        <div>Total orders delivered: {getTotalDeliveredOrders()}</div>
+                    </div>
 
         </>
     );

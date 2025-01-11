@@ -1,0 +1,107 @@
+@media (max-width:768px)
+{
+    .navbar-brand{
+        font-size: 1rem;
+    }
+    nav ul{
+        margin-left: 0px;
+    }
+    .name{
+        font-size: 5rem;
+    }
+    .pizza-img-container img{
+        scale: 1.2 !important;
+    }
+    .circle-container, .circle-container2{
+        right: 30px;
+    }
+    .form-page{
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .works-left-side, .works-right-side{
+        width: 100%;
+    }
+    .box{
+        margin: 1rem;
+    }
+    .quantity-control{
+        flex-direction: column;
+    }
+    .count .quantity-button{
+        background-color: transparent;
+    }
+    .category-type{
+        display: none;
+    }
+    .price-sec{
+        padding-left: 0;
+    }
+    .place-order-section{
+        width: 90vw;
+    }
+
+    .address-section{
+        width: 90vw;
+    }
+    .place-order-instruction{
+        width: 80vw !important;
+    }
+    .input-fields-container{
+        width: 80vw !important;
+        grid-template-columns:none;
+        
+    }
+    .orders-main-section{
+        padding-left: 1rem;
+        letter-spacing: 1px;
+        padding-right: 0rem;
+    }
+    .pizza-stage-section{
+        width: 100vw;
+        padding-left: 0;
+    }
+    .pizza-order-order{
+        padding-left: 1rem;
+    }
+    .row{
+        flex-wrap: nowrap
+    }
+    .container{
+        width: auto;
+    }
+    .section2{
+        font-size: 0.7rem;
+    }
+    .order-detail-box{
+        padding: 1rem;
+        
+    }
+    .order-detail-box>p{
+        overflow: hidden;
+    }
+    
+    .order-row{
+        overflow:visible;
+      }
+    .row {
+        display: flex; 
+        padding-left: 27rem;
+      }
+      .col-sm {
+        flex: 1; /* Ensures each column takes equal width */
+        min-width: 200px; /* Set a minimum width for each column */
+        max-width: 300px; /* Optional: set a max width if needed */
+        
+      }
+      .order-card-title{
+        font-size: 0.7rem;
+        overflow: hidden;
+      }
+      .total-order-delivered{
+        padding-left:1rem;
+      }
+}
+.count .quantity-button{
+    background-color: transparent !important;
+}

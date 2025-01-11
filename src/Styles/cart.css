@@ -179,6 +179,7 @@
   display: none;
   right: 0;
   bottom: 0;
+  background-color: white;
   font-family: "Jua", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.69) 0rem 0px 1rem 0px;
 }
@@ -238,4 +239,8 @@
 }
 .place-order-grand-total{
   color: rgb(255, 0, 0);
+}
+.total-order-delivered{
+  font-family: "Jua",sans-serif;
+  padding: 1rem 4rem 1rem 4rem;
 }
