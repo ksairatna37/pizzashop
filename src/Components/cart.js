@@ -1,4 +1,3 @@
-// components/Cart.js
 import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Navbar from './navbar';
@@ -21,11 +20,11 @@ import paneer from "../assets/pizza/paneer.png";
 import meat from "../assets/pizza/meat.png";
 function Cart() {
     const { pizzaname, price } = useParams();
-    console.log(price) // Ensures price is an integer
+    console.log(price)
     let [count, newcount] = useState(1);
     let pizzaprice = Math.floor(price * count)
     const value = Math.floor(pizzaprice)
-    const tax = Math.floor(value * 0.18); // Ensures tax is an integer (18% of price)
+    const tax = Math.floor(value * 0.18);
     const totalPrice = value + tax;
     const location = useLocation();
     const { description, choosecategory, img, base, size } = location.state || {};
@@ -54,7 +53,7 @@ function Cart() {
         if (!paymode) newErrors.paymode = "Payment mode must be selected.";
 
         setErrors(newErrors);
-        return Object.keys(newErrors).length === 0; // Returns true if no errors
+        return Object.keys(newErrors).length === 0;
     };
 
     const navigate = useNavigate()
@@ -62,22 +61,19 @@ function Cart() {
         const existingOrders = JSON.parse(localStorage.getItem("orders")) || [];
         
 
-        // Check if the total number of orders is 10
         if (existingOrders.length >= 10) {
             alert("Not taking any order for now.");
             navigate(`/myorders`)
-            return; // Prevent further execution if the limit is reached
+            return;
         }
 
         if (validateInputs()) {
-            // Generate the next order ID
             const nextOrderId = existingOrders.length > 0
-                ? String(existingOrders.length).padStart(3, "0") // Increment and pad with zeros
+                ? String(existingOrders.length).padStart(3, "0")
                 : "000";
 
             const orderDate = new Date().toISOString();
 
-            // Create the new order object
             const newOrder = {
                 orderId: nextOrderId,
                 pizzaname,
@@ -99,7 +95,6 @@ function Cart() {
             };
             console.log(newOrder.orderDate);
 
-            // Save the order to local storage
             localStorage.setItem("orders", JSON.stringify([...existingOrders, newOrder]));
 
             navigate(`/myorders`);
@@ -114,10 +109,9 @@ function Cart() {
     const handleplaceorder = () => {
         if (!address.trim()) {
             document.getElementById("alert").style.display = "block";
-            return; // Exit the function
+            return;
         }
 
-        // Proceed with the action if address is not empty
         document.getElementById("works-right-side").style.display = "none";
         document.getElementById("place-order-section").style.display = "flex";
     };
@@ -152,7 +146,7 @@ function Cart() {
                             <div className="count quantity-control">
                                 <button
                                     className="quantity-button delete-button"
-                                    onClick={() => newcount((prevCount) => Math.max(1, prevCount - 1))} // Ensures count doesn't go below 1
+                                    onClick={() => newcount((prevCount) => Math.max(1, prevCount - 1))}
                                 >
                                     <img src={del} alt="" />
                                 </button>

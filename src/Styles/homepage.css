@@ -2,16 +2,15 @@
 .home-page {
   display: flex;
   width: 100%;
-  /* background-color: #09262C; */
   background-image: linear-gradient(to right, red, yellow);
+  /* background-image: linear-gradient(to right, red, blue); */
   scroll-snap-align: start;
   align-items: center;
   justify-content: center;
-  /* background-image: url('../assets/homepage.jpg'); */
-  background-size: contain; /* Cover the entire viewport */
-  background-repeat: no-repeat; /* Prevent image from repeating */
-  background-position: center; /* Center the image */
-  margin: 0; /* Remove default body margin for full bleed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
   height: 100vh;
   min-height: 100vh;
 }
@@ -26,42 +25,42 @@
   z-index: -99999;
 }
 .circle-container {
-  position: absolute; /* Position relative to the .home-page container */
-  bottom: 50px; /* Distance from bottom */
-  right: 70px; /* Distance from right */
-  width: 100px; /* Set circle width */
-  height: 100px; /* Set circle height */
-  border-radius: 50%; /* Make it a circle */
-  background-color: white; /* White background for the circle */
-  display: flex; /* Use flexbox to center image */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease;
   z-index: 999;
 }
 .circle-container2 {
-  position: absolute; /* Position relative to the .home-page container */
-  bottom: 50px; /* Distance from bottom */
-  right: 70px; /* Distance from right */
-  width: 100px; /* Set circle width */
-  height: 100px; /* Set circle height */
-  border-radius: 50%; /* Make it a circle */
-  background-color: white; /* White background for the circle */
-  display: flex; /* Use flexbox to center image */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  position: absolute;
+  bottom: 50px;
+  right: 70px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -999;
   border: 3px solid rgb(0, 0, 0);
 }
 
 
 .circle-image {
-  width: 70%; /* Adjust size of image */
+  width: 70%;
   height: auto;
   display: block;
 }
 .circle-image2 {
-  width: 20%; /* Adjust size of image */
+  width: 20%;
   height: auto;
   display: block;
 }
@@ -82,7 +81,7 @@
 
 
 .pizza-img{
-    scale: 1.5 !important; /* Adjust size of image */
+    scale: 1.5 !important;
   display: block;
   background-position: center;
   background-size: cover;

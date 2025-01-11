@@ -35,7 +35,7 @@
     padding: 15px;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr; /* Three equal height rows */
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -45,9 +45,8 @@
 }
 
 .row {
-    /* If you want further styling on the row, add here */
     display: flex;
-    align-items: center; /* For Vertical Alignment */
-    justify-content: center; /* For Horizontal Alignment */
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }

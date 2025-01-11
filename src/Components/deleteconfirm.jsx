@@ -4,18 +4,15 @@ const Deleteconfirm = (props) => {
    const handleorderDelete = ()=>{
     let orders = JSON.parse(localStorage.getItem("orders")) || [];
 
-        // Filter out the order with the matching orderId
         orders = orders.filter(order => order.orderId !== props.orderid);
 
-        // Save the updated orders array back to localStorage
         localStorage.setItem("orders", JSON.stringify(orders));
 
         
         
 
-        // You can also trigger a callback here if you want to update the UI
         if (props.onDelete) {
-            props.onDelete();  // Trigger a UI update (optional)
+            props.onDelete();  
         }
    }
   return (

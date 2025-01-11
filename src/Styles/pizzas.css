@@ -1,28 +1,27 @@
-/* homepage.css */
 .pizza-card{
     display: flex;
     justify-content: center;
     align-items: center;
      
-    padding-right: 3rem;/* Add spacing from top */
+    padding-right: 3rem;
 }
 .card-container{
     border: 2px solid #c0c0c0;
     border-radius: 10px;
     background-color: #f8f8f8;
     display: flex;
-    flex-direction: column; /* Lay out elements vertically */
-    width: 300px; /* Set a fixed width for the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    overflow: hidden; /* Prevent overflowing content*/
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 .card-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px; /* Add some padding for all content */
-    text-align: center; /* Center all text content */
+    padding: 20px;
+    text-align: center;
 }
 
 .pizza-title {
@@ -33,15 +32,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;  /* Fixed width for the container */
-    height: 200px; /* Fixed height for the container */
-    overflow: hidden; /* Hide image overflows */
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
   
   }
   
   .pizza-image {
-      width: auto; /* Image will auto adjust its width */
-       height: 100%; /* Image will take up 100% of container's height */
+      width: auto;
+       height: 100%;
       max-width: none;
       object-fit: cover;
       border-radius: 5px;
@@ -66,7 +65,7 @@
   cursor: pointer;
   border-radius: 50%;
   margin: 0 5px;
-  outline: none; /* Removing default outline*/
+  outline: none;
 }
 
 .quantity-button:hover{
@@ -78,7 +77,7 @@
     margin: 0 10px;
 }
 .add-to-cart-button{
-    background-color: #212121; /* Dark green*/
+    background-color: #212121;
     color: white;
     border: none;
     padding: 12px;
@@ -86,7 +85,7 @@
     font-size: 16px;
     border-radius: 5px;
      margin-top: 20px;
-     outline: none; /* Removing default outline*/
+     outline: none;
 }
 .add-to-cart-button:hover {
     background-color: #323232;

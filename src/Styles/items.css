@@ -11,8 +11,8 @@
     letter-spacing: 2px;
     line-height: 60px;
     padding: 1rem 4rem 1rem 4rem ;
-    display: flex; /* Added for flexbox layout */
-    justify-content: space-between; /* Distributes space between items*/
+    display: flex;
+    justify-content: space-between;
     align-items: center; 
 }
 .section1 span{

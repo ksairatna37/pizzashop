@@ -46,7 +46,7 @@
   padding: 1rem;
 }
 .img {
-  flex: 0 0 20%; /* 10% of the parent's width */
+  flex: 0 0 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,16 +57,14 @@
 }
 
 .pizza-details {
-  flex: 0 0 60%; /* 80% of the parent's width */
+  flex: 0 0 60%;
   display: flex;
-  /* Replace with your content or styles */
   flex-direction: column;
 }
 
 .price-sec {
   flex: 0 0 20%;
   text-align: right;
-  /* 10% of the parent's width */
 }
 
 .price-sec .pizza-price {
@@ -92,7 +90,7 @@
   padding: 10px 1rem;
 }
 .address-input {
-  width: 100%; /* Adjust to fit the parent container */
+  width: 100%;
   padding: 10px;
   margin-top: 10px;
   font-size: 1rem;
@@ -144,7 +142,6 @@
   display: flex;
 }
 
-/* homepage.css */
 .quantity-control {
   display: flex;
   justify-content: center;
@@ -161,7 +158,7 @@
   cursor: pointer;
   border: none;
   background-color: white;
-  outline: none; /* Removing default outline*/
+  outline: none;
 }
 
 .quantity-button:hover {
@@ -195,13 +192,12 @@
 .cancel-button:hover {
   cursor: pointer;
 }
-/* homepage.css */
 .input-fields-container {
-  display: grid; /* Make container grid */
-  grid-template-columns: 1fr 1fr; /* Two columns of equal width*/
-  gap: 10px; /* Space between rows and columns */
-  width: inherit; /* set the width*/
-  margin: 1rem auto; /* set margin to center the component */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: inherit;
+  margin: 1rem auto;
 }
 
 .input-fields-container>div{
@@ -216,11 +212,11 @@
 }
 .input-field {
   padding: 10px;
-  border: 1px solid #c0c0c0; /* Light gray border*/
-  border-radius: 5px; /* Rounded corners */
-  outline: none; /* Removing default outline*/
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  outline: none;
   font-size: 16px;
-  color: black; /* Grey text for placeholders*/
+  color: black;
 }
 .input-field:focus {
   border-color: black;

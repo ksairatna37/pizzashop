@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './navbar';
-import '../Styles/orders.css'; // Create this CSS file for styling
+import '../Styles/orders.css';
 import Deleteconfirm from './deleteconfirm';
 import jsPDF from "jspdf";
 
@@ -8,7 +8,6 @@ export default function Orders() {
     const [orders, setOrders] = useState(
         JSON.parse(localStorage.getItem('orders')) || []
     );
-    // Fetch orders from local storage on component mount
     useEffect(() => {
         const storedOrders = JSON.parse(localStorage.getItem("orders")) || [];
         setOrders(storedOrders);
@@ -20,55 +19,47 @@ export default function Orders() {
 
     const handleStatusChange = (orderId, newStatus) => {
 
-        // Get current orders from localStorage
         const orders = JSON.parse(localStorage.getItem('orders')) || [];
 
-        // Update the status of the specified order
         const updatedOrders = orders.map(order =>
             order.orderId === orderId ? { ...order, orderstatus: newStatus } : order
         );
 
-        // Save updated orders back to localStorage
         localStorage.setItem('orders', JSON.stringify(updatedOrders));
 
-        // Trigger a re-render by updating the component state
         setOrders(updatedOrders);
     };
 
-    const [timeUpdated, setTimeUpdated] = useState(Date.now());  // Store the latest time for refreshing
+    const [timeUpdated, setTimeUpdated] = useState(Date.now());
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setTimeUpdated(Date.now());  // Update the time every second
-        }, 1000);  // 1000ms = 1 second
+            setTimeUpdated(Date.now());
+        }, 1000);
 
-        // Clean up the interval when the component unmounts
         return () => clearInterval(interval);
     }, []);
 
-    // Helper function to calculate time difference
     function calculateTimeTaken(orderDate) {
-        const orderTime = new Date(orderDate);  // Convert the orderDate string into a Date object
-        const currentTime = timeUpdated;  // Get the current time
+        const orderTime = new Date(orderDate);
+        const currentTime = timeUpdated;
 
-        // Calculate the time difference in milliseconds
         const timeDiff = currentTime - orderTime;
 
-        // Convert milliseconds into minutes
-        const minutes = Math.floor(timeDiff / (1000 * 60));  // Time difference in minutes
+        const minutes = Math.floor(timeDiff / (1000 * 60));
 
-        return `${minutes} min`;  // Return time in 'X min' format
+        return `${minutes} min`;
     }
 
 
 
 
     function formatOrderDate(orderDate) {
-        const date = new Date(orderDate);  // Convert ISO string to Date object
+        const date = new Date(orderDate);
         if (isNaN(date)) {
-            return 'Invalid Date';  // Check if the date is valid
+            return 'Invalid Date';
         }
-        return date.toLocaleString();  // Convert the date to a readable format in local time
+        return date.toLocaleString();
     }
 
     const [modalData, setModalData] = useState(null);
@@ -79,20 +70,18 @@ export default function Orders() {
 
 
     const handleOrderDelete = () => {
-        // Update orders state (this is optional, for UI update)
         setOrders(JSON.parse(localStorage.getItem('orders')) || []);
     };
 
     function getTotalDeliveredOrders() {
-        const orders = JSON.parse(localStorage.getItem("orders")) || []; // Fetch orders from local storage
-        return orders.filter(order => order.orderstatus === "Order Picked").length; // Count delivered orders
+        const orders = JSON.parse(localStorage.getItem("orders")) || [];
+        return orders.filter(order => order.orderstatus === "Order Picked").length;
     }
     
 
     const generateReceipt = (order) => {
         const doc = new jsPDF();
 
-        // Add Company Name and Slogan
         doc.setFont("helvetica", "bold");
         doc.setFontSize(18);
         doc.text("True Pizza", 20, 20);
@@ -100,21 +89,17 @@ export default function Orders() {
         doc.setFontSize(12);
         doc.text("Delicious Pizzas, Every Time!", 20, 30);
 
-        // Add a line separator
         doc.setLineWidth(0.5);
         doc.line(20, 35, 190, 35);
 
-        // Receipt Title
         doc.setFont("helvetica", "normal");
         doc.setFontSize(16);
         doc.text("Order Receipt", 20, 45);
 
-        // Receipt Creation Date
         const receiptDate = new Date().toLocaleString();
         doc.setFontSize(10);
         doc.text(`Receipt Created: ${receiptDate}`, 20, 55);
 
-        // Add order details
         doc.setFontSize(12);
         doc.text(`Order ID: ${order.orderId}`, 20, 70);
         doc.text(`Pizza: ${order.pizzaname}`, 20, 80);
@@ -124,16 +109,13 @@ export default function Orders() {
         doc.text(`Address: ${order.address}`, 20, 120);
         doc.text(`Payment Mode: ${order.paymode}`, 20, 130);
 
-        // Add another line separator
         doc.line(20, 140, 190, 140);
 
-        // Appreciation message
         doc.setFont("helvetica", "italic");
         doc.setFontSize(12);
         doc.text("Thank you for ordering with True Pizza!", 20, 150);
         doc.text("We hope you enjoy your meal. Come back soon!", 20, 160);
 
-        // Save the PDF
         doc.save(`Order_${order.orderId}_Receipt.pdf`);
     };
     return (
@@ -177,14 +159,13 @@ export default function Orders() {
                             {getOrdersByStatus('Order Placed').map(order => {
                                 const timeTaken = calculateTimeTaken(order.orderDate);
 
-                                // Extract minutes from timeTaken and check if it's greater than 3 minutes
                                 const minutesTaken = parseInt(timeTaken.split(' ')[0]);
                                 const isTimeExceeded = minutesTaken > 3;
 
                                 return (
                                     <div
                                         key={order.orderId}
-                                        className={`order-detail-box ${isTimeExceeded ? 'bg-danger' : ''}`}  // Conditionally apply bg-danger if time > 3min
+                                        className={`order-detail-box ${isTimeExceeded ? 'bg-danger' : ''}`}
                                     >
                                         <p>Order ID: {order.orderId}</p>
                                         <p>Pizza: {order.pizzaname}</p>
